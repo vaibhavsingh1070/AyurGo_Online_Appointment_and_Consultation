@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User List</title>
+<style>
+
+.banner{
+    background-color: #2ec8a6;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    border: 1px solid #2ec8a6;
+}
+.txt-nav{
+    margin-left: 20px;
+    height: 60%;
+    align-items: center;
+    margin-top: 20px;
+    
+    #alink{
+	text-decoration: none;
+	color: #fff;
+	}
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="banner">
+        <div class="txt-nav">
+            <a id="alink" href="/admin/dashboard"><span>Home</span></a>
+            <span> / Users-List</span>
+            <h2>Users-List</h2>
+        </div>
+    </div>
+<div class="container-fluid text-center">
+  <div><h2>Manage Users</h2></div>
+  <div>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+      <th:block th:each="user : ${listUsers}">
+       <tr>
+         <td>[[${user.id}]]</td>
+         <td>[[${user.name}]]</td>
+         <td>[[${user.mobileNo}]]</td>
+         <td>[[${user.email}]]</td>
+       </tr>
+      </th:block>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+            .navbar {
+      background-color: #2ec8a6;
+      color: #ffffff; 
+      min-height: 60px;
+    }
+ 
+    .navbar-nav .nav-link {
+        padding: 20px;
+        font-size: 20px;
+        margin-right: 15px;
+      color: #ffffff !important;
+       }
+
+        main {
+            background-image: url('../images/banner-img.png'), linear-gradient(rgba(144, 238, 144, 0.144), rgba(144, 238, 144, 0.084));
+            background-repeat: no-repeat;
+            background-position: 75% center;
+            /* Adjust the percentage to move between center and right */
+            width: 100%;
+            height: 100vh;
+            /* Cover the full screen */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            /* Add padding to title for space from top */
+        }
+
+
+        .title {
+            width: 50%;
+            /* Take up 50% of the main element's width */
+        }
+
+        .title h1 {
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.836);
+            font-size: 55px;
+            /* Increase font size three times */
+            line-height: 1.2;
+            /* Adjust line height */
+            margin-left: 30px;
+            /* Add space from the left side */
+            margin-top: 20px;
+            /* Add space from the top */
+            padding: 10px;
+            /* Add internal space */
+        }
+
+
+        .title span {
+            color: rgb(5, 115, 241);
+            font-weight: bold;
+            font-size: 50px;
+            /* Increase font size three times */
+            line-height: 1.2;
+            /* Adjust line height */
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            position: absolute;
+            overflow: hidden;
+            top: 65%;
+            /* Position the card vertically in the middle */
+            left: 50%;
+            /* Position the card horizontally in the middle */
+            transform: translate(-50%, -50%);
+            /* Center the card */
+            border-radius: 10px;
+            z-index: 1;
+            /* Set a higher z-index to ensure the card is above the background image */
+            animation: floating 3s ease-in-out infinite;
+            /* Apply floating animation */
+        }
+
+      /*   .card1 {
+            position: absolute;
+            overflow: hidden;
+            top: 45%;
+            Position the card vertically in the middle
+            left: 85%;
+            Position the card horizontally in the middle
+            transform: translate(-50%, -50%);
+            Center the card
+            border-radius: 10px;
+            Box shadow for card
+            z-index: 1;
+            Set a higher z-index to ensure the card is above the background image
+            animation: floating 3s ease-in-out infinite;
+            Apply floating animation
+        } */
+
+        .card1 {
+            position: absolute;
+            overflow: hidden;
+            top: 45%;
+            /* Position the card vertically in the middle */
+            left: 85%;
+            /* Position the card horizontally in the middle */
+            transform: translate(-50%, -50%);
+            /* Center the card */
+            border-radius: 10px;
+            /* Box shadow for card */
+            z-index: 1;
+            /* Set a higher z-index to ensure the card is above the background image */
+            animation: floating 4s ease-in-out infinite;
+            /* Apply floating animation */
+        }
+
+        .card2 {
+            position: absolute;
+            overflow: hidden;
+            top: 95%;
+            /* Position the card vertically in the middle */
+            left: 80%;
+            /* Position the card horizontally in the middle */
+            transform: translate(-50%, -50%);
+            /* Center the card */
+            border-radius: 10px;
+            /* Box shadow for card */
+            z-index: 1;
+            /* Set a higher z-index to ensure the card is above the background image */
+            animation: floating 3s ease-in-out infinite;
+            /* Apply floating animation */
+        }
+        
+               @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+        * {
+            font-family: Roboto;
+        }
+
+        .footer-distributed {
+            background-color: #292c2f;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: normal 16px sans-serif;
+            padding: 45px 50px;
+        }
+
+        .footer-distributed .footer-left p {
+            color: #8f9296;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Footer links */
+
+        .footer-distributed p.footer-links {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 0 10px;
+            padding: 0;
+            transition: ease .25s;
+        }
+
+        .footer-distributed p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+            transition: ease .25s;
+        }
+
+        .footer-distributed .footer-links a:before {
+            content: "·";
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+
+        .footer-distributed .footer-right {
+            float: right;
+            margin-top: 6px;
+            max-width: 180px;
+        }
+
+        .footer-distributed .footer-right a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 3px;
+            transition: all .25s;
+        }
+
+        .footer-distributed .footer-right a:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+        }
+
+        .footer-distributed p.footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+
+        @media (max-width: 600px) {
+
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-right {
+                text-align: center;
+            }
+
+            .footer-distributed .footer-right {
+                float: none;
+                margin: 0 auto 20px;
+            }
+
+            .footer-distributed .footer-left p.footer-links {
+                line-height: 1.8;
+            }
+        }

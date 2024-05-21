@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="txt-nav">
+            <a href="/"><span>Home</span></a>
+            <span> / Login</span>
+            <h2> Login</h2>
+        </div>
+    </div>
+    <div class="space" style=" width: 100%; height: 30px;"></div>
+    <div class="space" style=" width: 19%; height: 440px; float: left;"></div>
+    <div class="bg-img" style=" width: 30%; height: 440px; float: left;"></div>
+    <div class="login-form1" style=" width: 35%; float: left;">
+        <div class="login-container" style="color: rgba(0, 0, 0, 0.726);">
+            <div class="login-form">
+                <h2>Sign in</h2>
+                <hr>
+                <th:block th:if="${param.error}">
+                    <p class="text-center text-danger fs-5">[[${session.SPRING_SECURITY_LAST_EXCEPTION.message}]]</p>
+                </th:block>
+                <th:block th:if="${param.logout}">
+                    <p class="text-center text-success fs-5">Logout Successfully</p>
+                </th:block>
+                <form action="userLogin" method="post">
+                    <input type="text" name="username" placeholder="Email" required>
+                    <input type="text" name="password" placeholder="Password" required>
+                    <div class="forge"><a href="" id="for-pass">Forget Password ?</a></div>
+                    <button type="submit" style="font-size: 20px;" class="sub-btn">Sign in</button>
+                    <div class="ac">
+                        <p>Don't have an Account ?<a href="/register" id="reg">Register Now</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="space" style=" width: 10%; height: 440px; float: left;"></div>
+</body>
+
+</html>

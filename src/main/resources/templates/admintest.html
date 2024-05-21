@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://kit.fontawesome.com/c1df782baf.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <img th:src="@{/images/logo3.png}"  alt="" style="height: 65px; width: 180px; margin-left: 0;">
+  <div class="container">
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/admin/dashboard">Home <!-- <span class="sr-only">(current)</span> --></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard/appointmentlist">Appointments list</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard/userlist">List of users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard/adminprofile">Profile</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+     <main>
+        <div class="title">
+            <h1>Welcome to <span>Admin's </span> Dashboard</h1>
+        </div>
+
+        <div class="card">
+            <img th:src="@{/images/blue tick.png}" alt="regular checkup">
+        </div>
+
+        <div class="card1">
+            <img th:src="@{/images/banner-img2.png}" alt="card">
+        </div>
+        
+        <div class="card2">
+            <img th:src="@{/images/banner-img3.png}" alt="">
+        </div>
+    </main>
+    
+        <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="/dashboard">Home</a>
+
+                <a href="#">About</a>
+
+            </p>
+
+            <p>AyurGo &copy; 2024. All Rights Reserved</p>
+        </div>
+
+    </footer>
+ 
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    background-color: #2ec8a6;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    border: 1px solid #2ec8a6;
+}
+.txt-nav{
+    margin-left: 20px;
+    height: 60%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.move-text {
+    width: 400px;
+    font-size: 20px;
+    animation: moveRight 5s linear infinite; /* Adjust duration as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.bg-img{
+    width: 344px;
+    height: 258px;
+    margin-top: 50px;
+    background-image: url('../images/book-appointment.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.login-form {
+    padding: 20px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #2ec8a6;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="number"],
+.login-form input[type="password"],
+.login-form input[type="date"],
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.login-form button {
+    background-color: #2ec8a6;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder {
+    font-size: 16px;
+}
+
+hr{
+ border: 5px solid #2ec8a6;
+ width: 45%;
+ margin-bottom: 50px;
+}
+
+.sub-btn{
+    align-items: center;
+}
+#reg{
+    font-weight: 100;
+    font-size: 16px;
+    color: #2ec8a6;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.ac{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#terms{
+    color: #2ec8a6;
+}
+
+.login-form input[type="checkbox"]{
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+   
+    .radio-container {
+        display: inline-block;
+        margin-right: 20px; 
+    }
+
+    .radio-container input[type="radio"] {
+        display: none; 
+    }
+
+    .radio-container label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px; 
+    }
+
+   
+    .radio-container label:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+    }
+    .radio-container input[type="radio"]:checked + label:before {
+        background-color: #12f5c3; 
+    }
+
+    
+    .radio-container input[type="radio"]:checked + label:after {
+        display: block; 
+    }
+
+   
+    .radio-container label span {
+        margin-left: 5px; 
+    }
+
+    
+     .radio-container label:after {
+       content: '\2714'; 
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: #fff; 
+        display: none;
+     }
+
+     .box6{
+        margin-bottom: 10px;
+     }
+
+     select {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        color: rgba(0, 0, 0, 0.726);
+    }
+
+    @media only screen and (max-width: 768px) {
+        .space {
+            display: none;
+        }
+        .bg-img {
+            display: none;
+        }
+        .login-form1 {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .login-form {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .txt-nav {
+            margin-left: 10px;
+            text-align: center;
+        }
+    }
+    

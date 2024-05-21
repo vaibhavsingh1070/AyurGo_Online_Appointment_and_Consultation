@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Information</title>
+    <link rel="stylesheet" th:href="@{/css/profile.css}">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="txt-nav">
+            <a href="/admin/dashboard"><span>Home</span></a>
+            <span> / Profile</span>
+            <h3> Profile</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>User Profile Page</h2>
+            <div class="user-card">
+                <div class="user-info">
+                    <p><strong>Name:</strong> [[${user.name}]]</p>
+                    <br>
+                    <p><strong>Email:</strong> [[${user.email}]]</p>
+                    <br>
+                    <p><strong>Mob No:</strong> [[${user.mobileNo}]]</p>
+                    <br>
+                    <p><strong>Role:</strong> [[${user.role}]]</p>
+                </div>
+            </div>
+            <button class="logout-btn"><a href="/logout">Logout</a></button>
+        </div>
+    </div>
+</body>
+</html>
